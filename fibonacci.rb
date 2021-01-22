@@ -13,4 +13,12 @@ def fibs(n)
   result.sort.join(', ')
 end
 
-puts fibs(12)
+def fibs_rec(n)
+  if n == 0 || n == 1
+    return n
+  else
+    fibs_rec(n - 1) + fibs_rec(n - 2)
+  end
+end
+
+
